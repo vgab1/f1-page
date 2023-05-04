@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lewis Hamilton</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div id="inner-header">
+            <img src="img/logo/f1-white.png" width="100" alt="Formula 1 logo">
+        </div>
+        <nav id="navbar">
+            <div id="teams-container" class="times" onclick="">
+                <img id="alfaromeo-img" src="img/teams/alfaromeo.png" alt="AlfaRomeo">
+                <img id="alphatauri-img" src="img/teams/alphatauri.png" alt="Alphatauri">
+                <img id="alpine-img" src="img/teams/alpine.png" alt="Alpine">
+                <img id="astonmartin-img" src="img/teams/astonmartin.jpg" alt="AstonMartin">
+                <img id="ferrari-img" src="img/teams/ferrari.png" alt="Ferrari">
+                <img id="haas-img" src="img/teams/haas.png" alt="Haas">
+                <img id="mclaren-img" src="img/teams/mclaren.png" alt="McLaren">
+                <img id="mercedes-img" src="img/teams/mercedes.png" alt="Mercedes">
+                <img id="redbull-img" src="img/teams/redbull.png" alt="RedBull">
+                <img id="williams-img" src="img/teams/williams.png" alt="Williams">
+            </div>
+        </nav>
+    </header>
+    <!-- Modal -->
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <img id="team-img" src="img/scuderias/" alt="Equipe">
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <div class="drivers-box">
+                <div class="driver">
+                    <img id="driver1" src="img/drivers/" alt="Piloto 1">
+                    <p id="dnumb1"></p>
+                    <h2 id="dname1"></h2>
+                </div>
+                <div class="driver">
+                    <img id="driver2" src="img/drivers/" alt="Piloto 2">
+                    <p id="dnumb2"></p>
+                    <h2 id="dname2"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- piloto -->
+    <main id="main">
+        <div id="driver-img">
+            <img src="img/logo/hamilton.png" width="200" alt="Lewis Hamilton">
+            <img src="img/logo//helmet.png" width="200" alt="Capacete">
+        </div>
+        <h1>Lewis Hamilton</h1>
+    </main>
+    <!-- info do piloto -->
+    <section id="section-info">
+        <h2>Informações Do Piloto</h2>
+        <div class="section">
+            <div id="driver-info">
+                <div id="personel">
+                    <img src="img/logo/mercedes-logo.png" width="50" alt="Mercedes logo">
+                    <h3>Mercedes</h3>
+                </div>
+                <div class="info-container">
+                    <div class="info">
+                        <p>Nacionalidade</p>
+                        <img src="img/logo/gbr-flag.png" alt="Grã-Bretanha">
+                        <span>GBR</span>
+                    </div>
+                    <div class="info">
+                        <p>6 DE JAN. DE 1985</p>
+                        <span>38 Anos</span>
+                    </div>
+                    <div class="info">
+                        <p>NUMERO DO CAPACETE</p>
+                        <span>44</span>
+                    </div>
+                </div>
+                <div class="info-container">
+                    <div class="info">
+                        <p>Residência</p>
+                        <span>Monte Carlo, Monaco</span>
+                    </div>
+                    <div class="info">
+                        <p>Local De Nascimento</p>
+                        <span>Stevenage, United Kingdom</span>
+                    </div>
+                </div>
+            </div>
+            <div id="carrer">
+                <div class="carrer-numb">
+                    <p>Títulos Do Campeonato:</p>
+                    <span>7</span>
+                </div>
+                <div class="carrer-numb">
+                    <p>Grandes Prémios Iniciados:</p>
+                    <span>313</span>
+                </div>
+                <div class="carrer-numb">
+                    <p>Pódios:</p>
+                    <span>192</span>
+                </div>
+                <div class="carrer-numb">
+                    <p>Vitórias:</p>
+                    <span>103</span>
+                </div>
+                <div class="carrer-numb">
+                    <p>Pole Position:</p>
+                    <span>103</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Info Carreira -->
+    <section id="section-history">
+        <h2>Histórico De Carreira</h2>
+        <table id="table">
+            <thead id="head-table">
+                <tr>
+                    <th>Corridas</th>
+                    <th>Pódios</th>
+                    <th>Vitórias</th>
+                    <th>Pole Position</th>
+                </tr>
+            </thead>
+        </table>
+        <div id="mercedes">
+            <div class="team-box">
+                <img src="img/logo/mercedes.png" width="100" alt="mercedes logo">
+                <div class="container">
+                    <p>Mercedes</p>
+                    <span>2013 - 2023</span>
+                </div>
+            </div>
+            <table class="driver-numb">
+                <tbody class="body-table">
+                    <tr class="stats">
+                        <td class="year">Geral</td>
+                        <td class="numb">200</td>
+                        <td class="numb">142</td>
+                        <td class="numb">82</td>
+                        <td class="numb">77</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2022 (Posição 6)</td>
+                        <td>22</td>
+                        <td>9</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2021 (Posição 2)</td>
+                        <td>22</td>
+                        <td>17</td>
+                        <td>8</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2020 (Posição 1)</td>
+                        <td>16</td>
+                        <td>14</td>
+                        <td>11</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2019 (Posição 1)</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>11</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2018 (Posição 1)</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>11</td>
+                        <td>11</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2017 (Posição 1)</td>
+                        <td>20</td>
+                        <td>13</td>
+                        <td>9</td>
+                        <td>11</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2016 (Posição 2)</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>10</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2015 (Posição 1)</td>
+                        <td>19</td>
+                        <td>17</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2014 (Posição 1)</td>
+                        <td>19</td>
+                        <td>16</td>
+                        <td>11</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2013 (Posição 4)</td>
+                        <td>19</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="mclaren">
+            <div class="team-box">
+                <img src="img/logo/mclaren-f1.png" width="100" alt="mercedes logo">
+                <div class="container">
+                    <p>Mclaren</p>
+                    <span>2007 - 2012</span>
+                </div>
+            </div>
+            <table class="driver-numb">
+                <tbody class="body-table">
+                    <tr class="stats">
+                        <td class="year">Geral</td>
+                        <td class="numb">110</td>
+                        <td class="numb">49</td>
+                        <td class="numb">21</td>
+                        <td class="numb">7</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2012 (Posição 4)</td>
+                        <td>20</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2011 (Posição 5)</td>
+                        <td>19</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2010 (Posição 4)</td>
+                        <td>19</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2009 (Posição 5)</td>
+                        <td>17</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2008 (Posição 1)</td>
+                        <td>18</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="stats">
+                        <td class="year">2007 (Posição 2)</td>
+                        <td>17</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <img src="img/logo/f1-white.png" width="100" alt="Formula 1 logo">
+        <p>&copy; 2003-2023 Formula One World Championship Limited</p>
+    </footer>
+</body>
+</html>

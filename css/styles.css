@@ -1,0 +1,471 @@
+@font-face {
+    font-family: "formula1";
+    src: url("/font/Formula1-Regular_web_0.ttf") format("truetype"),
+    url("/font/Formula1-Bold_web_0.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "formula1";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF1F6;
+}
+
+/* Cabeçalho */
+
+#inner-header {
+    background-color: #E10600;
+}
+
+#teams-container {
+    background-color: #e5e5e5;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#teams-container img {
+    margin: auto;
+    width: 50px;
+    transition: 0.3s ease-in-out;
+}
+  
+#teams-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal */
+button {
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: #FFF;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#fade, #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body {
+    margin-bottom: 1rem;
+}
+
+.modal-body img {
+    width: 150px;
+}
+
+.drivers-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.driver {
+    text-align: center;
+}
+
+#modal.hide, #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
+
+#team-img {
+    width: 300px;
+}
+
+#dnumb1, #dnumb2 {
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#driver1, #driver2 {
+    transition: 0.3s ease-in-out;
+}
+
+#driver1:hover, #driver2:hover {
+    transform: scale(1.1);
+}
+
+/* Piloto */
+#main {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #00A19B;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#main h1 {
+    padding-top: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#driver-img {
+    display: flex;
+    gap: 3rem;
+}
+
+#driver-img img {
+    margin: auto;
+    border-radius: 10%;
+}
+
+/* info do piloto */
+#section-info {
+    background-color: #fff;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#section-info h2 {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+}
+
+.section {
+    display: flex;
+    gap: 3rem;
+}
+
+#driver-info {
+    border-right: 1px solid #000;
+}
+
+#personel {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+    border-top: 1px solid #000;
+}
+
+.info {
+    text-align: center;
+}
+
+.info img {
+    width: 20px;
+}
+
+.info p {
+    color: #9B9B9D;
+    font-size: 12px;
+    padding-bottom: 2px;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+#carrer {
+    background-color: #F5F6F9;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.carrer-numb {
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+    margin-bottom: 1rem;
+}
+
+/* Info Carreira */
+#section-history {
+    background-color: #fff;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#section-history h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+#table {
+    float: right;
+    padding-right: 2rem;
+}
+
+#head-table th {
+    border-right: 2px solid rgba(0, 0, 0, 0.308);
+    padding: 3px;
+    color: #9B9B9D;
+    font-weight: lighter;
+}
+
+#head-table th:last-child {
+    border-right: none;
+}
+
+.team-box {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.container {
+    text-align: center;
+}
+
+.container span {
+    color: #9B9B9D;
+    font-size: 0.7rem;
+}
+
+.driver-numb {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.driver-numb th,
+.driver-numb td {
+    padding: 1rem;
+}
+
+.body-table {
+    text-align: right;
+}
+
+.stats {
+    border-bottom: 1px solid #9B9B9D;
+}
+
+.year {
+    font-weight: bold;
+    float: left;
+}
+
+.numb {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #15151E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    font-style: italic;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    #inner-header {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #teams-container {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+    #teams-container img {
+        width: 30px;
+    }
+
+    #teams-container img:hover {
+        transform: none;
+    }
+
+    /* Modal */
+    button {
+        font-size: 0.8rem;
+    }
+
+    #modal {
+        height: 100vh;
+        max-width: 100%;
+        padding: 2rem;
+        border-radius: 0;
+    }
+
+    .modal-body img {
+        width: 150px;
+    }
+
+    .drivers-box {
+        font-size: 0.6rem;
+        
+    }
+
+    #driver1, #driver2 {
+        margin-top: 0.5rem;
+    }
+
+    #driver1:hover, #driver2:hover {
+        transform: none;
+    }
+
+    /* Piloto */
+    #main {
+        margin: 2rem 1rem;
+    }
+
+    #driver-img {
+        flex-direction: column;
+    }
+
+    #driver-img img {
+        margin-bottom: 1rem;
+    }
+
+    /* Info do piloto */
+    #section-info h2 {
+        border: none;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    #driver-info {
+        border: none;
+    }
+
+    #personel {
+        justify-content: center;
+    }
+
+    .info-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: none;
+    }
+
+    .info {
+        padding: 1rem;
+        border-bottom: 1px solid #000;
+    }
+
+    #carrer {
+        background-color: #F5F6F9;
+        margin: 1rem 0;
+    }
+
+    .carrer-numb {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .carrer-numb p {
+        font-size: 1.2rem;
+    }
+
+    .carrer-numb span {
+        font-weight: bold;
+    }
+
+    /* Info Carreira */
+    #table {
+        margin: 0;
+        padding: 0;
+    }
+
+    #head-table th {
+        font-size: 10px;
+    }
+
+    #mercedes {
+        margin-top: 1rem;
+    }
+
+    .container {
+        display: none;
+    }
+    
+    .driver-numb th,
+    .driver-numb td {
+        font-size: 12px;
+    }
+
+    /* Rodapé */
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+    }
+
+    footer p {
+        padding-top: 1rem;
+    }
+
+}
