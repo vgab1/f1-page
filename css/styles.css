@@ -215,7 +215,7 @@ button:hover {
     padding-bottom: 2px;
 }
 
-.info span {
+.info span, .carrer-numb span {
     font-weight: bold;
 }
 
