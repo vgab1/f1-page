@@ -1,13 +1,7 @@
-@font-face {
-    font-family: "formula1";
-    src: url("/font/Formula1-Regular_web_0.ttf") format("truetype"),
-    url("/font/Formula1-Bold_web_0.ttf") format("truetype");
-}
-
 * {
     margin: 0;
     padding: 0;
-    font-family: "formula1";
+    font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
 }
 
@@ -261,7 +255,7 @@ button:hover {
     border-right: 2px solid rgba(0, 0, 0, 0.308);
     padding: 3px;
     color: #9B9B9D;
-    font-weight: lighter;
+    font-weight: light;
 }
 
 #head-table th:last-child {
